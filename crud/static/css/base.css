@@ -1,0 +1,35 @@
+
+div.header_color{
+
+    text-align: center;
+    background-color: aqua;
+}
+
+h2.color_title{
+
+    color: red;
+}
+
+
+.color_div {
+
+    background-color: crimson;
+}
+
+div.color_body{
+
+    p {
+
+        color: black;
+    }
+}
+
+/*h3.color_title_home{
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 200px;
+
+    color:black;
+}
+*/
+

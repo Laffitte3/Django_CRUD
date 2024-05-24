@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 <!DOCTYPE html>
@@ -6,14 +7,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+rel="stylesheet">
     <title>home</title>
 </head>
 <body>
     {% for post in post_list %}
     <div>
-        <h2><a href="">{{ post.title}}</a></h2>
+        <h2 class="color_title_home"><a href="">{{ post.title}}</a></h2>
         <hr>
-        <p>{{ post.body }}</p>
+        <div class="color_div">
+             <div class="color_body">
+
+                <p>{{ post.body }}</p>
+
+            </div>
+        </div>
+       
         <br>
 
     </div>

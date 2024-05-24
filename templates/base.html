@@ -1,5 +1,8 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +10,19 @@
 </head>
 <body>
 
-    <header>
-        <h1><a href="{% url 'home' %}">Inicio</a></h1>
-        <hr>
-        <h1>Postea tu informacion!!</h1>
+    <header >
+        <h3 class="color_title"><a href="{% url 'home' %}">Posts</a></h3>
+
+    <div class="header_color">
+
+            <h1>Postea tu informacion!!</h1>
+            <hr>
+    </div>
     </header>
 
     <div>
         {% block content %}
-        <h3><strong>Post</strong></h3>
+        
 
         {% endblock %}
     </div>
