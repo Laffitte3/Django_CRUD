@@ -9,12 +9,17 @@
     <title>home</title>
 </head>
 <body>
-    
-    <h1>Prueba</h1>
-    <h2>Prueba</h2>
-    <h3>Prueba</h3>
-    <h4>Prueba</h4>
+    {% for post in post_list %}
+    <div>
+        <h2><a href="">{{ post.title}}</a></h2>
+        <hr>
+        <p>{{ post.body }}</p>
+        <br>
 
+    </div>
+    {% endfor %}
+    
+ 
 
 </body>
 </html>
