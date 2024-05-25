@@ -15,8 +15,9 @@ rel="stylesheet">
 <body>
     {% for post in post_list %}
     <div>
-        <h2 class="color_title_home"><a href="">{{ post.title}}</a></h2>
+        <h2 class="color_title_home"><a href="{% url 'detail' post.pk %}">{{ post.title }}</a></h2>
         <hr>
+        <!--
         <div class="color_div">
              <div class="color_body">
 
@@ -24,7 +25,7 @@ rel="stylesheet">
                 
             </div>
                 <img src="{{post.image.url}} "width="200" height="200" />
-        </div>
+        </div> -->
        
         <br>
 
