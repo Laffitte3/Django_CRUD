@@ -11,14 +11,17 @@
 <body>
 
     <header >
-        <h3 class="color_title"><a href="{% url 'home' %}">Posts</a></h3>
-
+        <div>
+            <h3 class="color_title"><a href="{% url 'home' %}">Go back</a></h3>
+        </div>
+        <div>
+            <h3 class="color_title"><a href="{% url 'post_new' %}">New post</a></h3>
+        </div>
+        
+        
     <div class="header_color">
 
             <h1>Postea tu informacion!!</h1>
-            <div class="base_resize">
-                <img src="{{ post.image.url }} "width="64" height="64" />
-            </div>
             <hr>
     </div>
     </header>
